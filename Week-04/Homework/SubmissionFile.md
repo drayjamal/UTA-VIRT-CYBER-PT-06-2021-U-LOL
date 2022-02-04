@@ -40,15 +40,15 @@
 
 1. Add an `engineers` group to the system.
 
-    - Command to add group:
+    - Command to add group: sudo addgroup engineers
 
 2. Add users `sam`, `joe`, `amy`, and `sara` to the managed group.
 
-    - Command to add users to `engineers` group (include all four users):
+    - Command to add users to `engineers` group (include all four users):sudo usermod -a -G engineers sara joe amy sam
 
 3. Create a shared folder for this group at `/home/engineers`.
 
-    - Command to create the shared folder:
+    - Command to create the shared folder: sudo mkdir engineerscd
 
 4. Change ownership on the new engineers' shared folder to the `engineers` group.
 
@@ -56,11 +56,10 @@
 
 ### Step 4: Lynis Auditing
 
-1. Command to install Lynis:
+1. Command to install Lynis: Lynis was already installed. But according to digitalocean.com, its sudo apt-get install lynis
+3. Command to see documentation and instructions: nano README
 
-2. Command to see documentation and instructions:
-
-3. Command to run an audit:
+3. Command to run an audit: sudo lynis audit system
 
 4. Provide a report from the Lynis output on what can be done to harden the system.
 
