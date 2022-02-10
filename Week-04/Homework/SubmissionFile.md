@@ -4,9 +4,9 @@
 
 1. Permissions on `/etc/shadow` should allow only `root` read and write access.
 
-    - Command to inspect permissions:
+    - Command to inspect permissions: ls -la
 
-    - Command to set permissions (if needed):
+    - Command to set permissions (if needed): 
 
 2. Permissions on `/etc/gshadow` should allow only `root` read and write access.
 
