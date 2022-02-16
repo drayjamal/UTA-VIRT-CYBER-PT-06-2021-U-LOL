@@ -4,33 +4,33 @@
 
 1. Permissions on `/etc/shadow` should allow only `root` read and write access.
 
-    - Command to inspect permissions: ls -la
+    - Command to inspect permissions: ls -la shadow
 
-    - Command to set permissions (if needed): 
+    - Command to set permissions (if needed): sudo chmod 600 gshadow
 
 2. Permissions on `/etc/gshadow` should allow only `root` read and write access.
 
-    - Command to inspect permissions:
+    - Command to inspect permissions: ls -la gshadow
 
-    - Command to set permissions (if needed):
+    - Command to set permissions (if needed): sudo chmod 600 gshadow
 
 3. Permissions on `/etc/group` should allow `root` read and write access, and allow everyone else read access only.
 
-    - Command to inspect permissions:
+    - Command to inspect permissions: ls -la group
 
-    - Command to set permissions (if needed):
+    - Command to set permissions (if needed): sudo chmod 644 group
 
 4. Permissions on `/etc/passwd` should allow `root` read and write access, and allow everyone else read access only.
 
-    - Command to inspect permissions:
+    - Command to inspect permissions: ls -la passwd
 
-    - Command to set permissions (if needed):
+    - Command to set permissions (if needed): sudo chmod 644 passwd
 
 ### Step 2: Create User Accounts
 
 1. Add user accounts for `sam`, `joe`, `amy`, `sara`, and `admin`.
 
-    - Command to add each user account (include all five users):
+    - Command to add each user account (include all five users): 
 
 2. Ensure that only the `admin` has general sudo access.
 
@@ -63,7 +63,7 @@
 
 4. Provide a report from the Lynis output on what can be done to harden the system.
 
-    - Screenshot of report output:
+    - Screenshot of report output: 
 
 
 ### Bonus
